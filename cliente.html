@@ -1,0 +1,50 @@
+<!DOCTYPE html">
+<html lang="pt-br">
+<head>
+	<title>CRUD JS</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="styles.css" />	
+	
+	<script src="myscript.js"></script>
+</head>
+
+<body>
+	<div class="all">
+		<h1 class="title">HTML, CSS, JS, JSON</h1>
+		<div class="center-fixed">	
+			<form id="frmCadastro">
+				<label for="txtNome">Nome</label><br>
+				<input type="text" id="txtNome" placeholder="Nome"><br>
+				
+				<label for="dtpDataNascimento">Data de Nascimento</label><br>
+				<input type="date" id="dtpDataNascimento" value="1990-08-29" required>
+				
+				<fieldset>
+					<legend>Sexo</legend>
+					<input type="radio" name="genero" value="male" id="rdoMasculino" checked>
+					<label for="rdoMasculino">Masculino</label><br>		
+					
+					<input type="radio" name="genero" value="female" id="rdoFeminino">
+					<label for="rdoFeminino">Feminino</label>
+				</fieldset>
+				
+				<input type="submit" name="" id="btnCadastrarSalvar" value="Cadastrar">
+			</form>
+		</div>
+		<table>
+			<caption><h2>Tabela</h2></caption>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nome</th>
+					<th>Nascimento</th>
+					<th>Sexo</th>
+					<th>Ultima Atualização</th>
+				</tr>
+			</thead>
+			<tbody id="tbodyResultados"></tbody>
+			<tfoot></tfoot>
+		</table>
+	</div>
+</body>
+</html>

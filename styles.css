@@ -1,0 +1,118 @@
+.all{	/**/	
+	background-color: khaki;
+	display: table;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.title {	
+	background-color: gold;
+	text-align: center;
+}
+
+.center-fixed{	
+	background-color: sandybrown ;
+	width: 500px;
+	height: 350px;
+	margin: 0 auto;
+}
+
+form{	
+	background-color: peru;
+	width: 260px;
+	height: auto;
+	margin: 0 auto auto auto; /*top, right, bottom, and left*/
+	padding: 20px;
+	border: 3px solid black;
+	border-radius: 10px;
+}
+
+	form label, form fieldset{
+		background-color: pink;		
+		font: bold 18px calibri, Arial, Courier;
+	}
+
+	form input{		
+	   	box-sizing: border-box;
+	   	border: 3px solid #ccc;
+	   	font: 15px arial, sans-serif;
+   		margin-bottom: 12px;	
+	}
+
+		form input:hover{
+
+		}
+
+		form input:focus{
+			border: 3px solid #333;			
+		    -webkit-transition: 0.5s;
+		    transition: 0.5s;
+    		outline: none;
+		}
+
+		form input[type=text]{
+			width: 100%;
+		    padding: 3px 5px;	    
+		}
+
+		form input[type=date]{
+			padding: 1px 5px;
+		}
+
+		form fieldset{				
+			width:125px;
+			height:auto;
+			border: none;
+			border-radius: 10px;
+		}
+			
+			form fieldset input[type=radio]{
+				width: 15px;
+				height: 15px;
+			}
+
+			form fieldset label{/*Radio Name*/				
+				background-color: lightgreen;
+				font: 16px arial, sans-serif;
+			}
+
+		form input[type=submit]{
+			padding: 12px 32px;
+			margin-top: 20px;			
+			cursor: pointer;
+    		border-radius: 4px;
+    		transition: 0.5s;
+    		border: 1px solid transparent;
+		}
+			form input[type=submit]:hover{
+				background-color: black;
+				color: yellow;			
+			}
+
+			form input[type=submit]:active{
+				background-color: darkgreen;				
+    			transition: 0.1s;
+				color: yellow;
+			}
+
+
+
+table, td, th{
+	background-color: transparent;
+	width: auto;
+	margin: 0 auto;
+	border:1px solid black;	
+    border-collapse: collapse;
+}
+
+	table button{
+		background-color: tan;
+	}
+/*classes utilizada no javascript*/
+.estadoAlteracao{
+	background-color: coral;
+}
+
+.estadoInclusao{
+	background-color: green;
+}
