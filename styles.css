@@ -1,24 +1,24 @@
-.all{	/**/	
-	background-color: khaki;
+.all{	
+	/*background-color: khaki;*/
 	display: table;
 	margin: 0 auto;
 	padding: 10px;
 }
 
 .title {	
-	background-color: gold;
+	/*background-color: gold;*/
 	text-align: center;
 }
 
 .center-fixed{	
-	background-color: sandybrown ;
+	/*background-color: sandybrown ;*/
 	width: 500px;
 	height: 350px;
 	margin: 0 auto;
 }
 
 form{	
-	background-color: peru;
+	/*background-color: lightcyan;*/
 	width: 260px;
 	height: auto;
 	margin: 0 auto auto auto; /*top, right, bottom, and left*/
@@ -28,7 +28,7 @@ form{
 }
 
 	form label, form fieldset{
-		background-color: pink;		
+		/*background-color: pink;*/	
 		font: bold 18px calibri, Arial, Courier;
 	}
 
@@ -72,47 +72,71 @@ form{
 			}
 
 			form fieldset label{/*Radio Name*/				
-				background-color: lightgreen;
+				/*background-color: lightgreen;*/
 				font: 16px arial, sans-serif;
 			}
 
 		form input[type=submit]{
-			padding: 12px 32px;
+			width: 50%;
+			margin-left: 25%;
 			margin-top: 20px;			
+			padding: 12px 32px;	/*top bottom - left right*/
+    		transition: 0.1s;
+    		border: 0 none; 
+    		border-radius: 20px;  		
+			background-color: black;				
+			color: white;			
 			cursor: pointer;
-    		border-radius: 4px;
-    		transition: 0.5s;
-    		border: 1px solid transparent;
 		}
+
 			form input[type=submit]:hover{
-				background-color: black;
-				color: yellow;			
+				background-color: lightgray;
+				color: black;			
 			}
 
 			form input[type=submit]:active{
-				background-color: darkgreen;				
-    			transition: 0.1s;
-				color: yellow;
+				font-weight: bold;
 			}
 
-
-
-table, td, th{
-	background-color: transparent;
+table{
 	width: auto;
 	margin: 0 auto;
-	border:1px solid black;	
-    border-collapse: collapse;
+    border-collapse: collapse;    
 }
+	table caption{
+		font: 15px sans-serif;
+		text-shadow: 2px 2px lightgray;
 
+	}
+	/*Linha do titulo*/
+	table thead tr{ 
+		background-color: gray;
+		color:white;
+	}
+			/*Celulas do Titulo*/
+			table thead tr th {		
+			padding: 3px 8px;
+			border-bottom:2px solid black;
+			border-right: 1px solid black;
+		}
+	/*Ao passar o mouse sobre a Linha*/
+	table tbody tr:hover {
+    	background-color: lightgray;		
+	}
+	/*celulas do conteudo*/
+	table tbody td{	
+		border: 1px dotted gray;
+		padding: 3px 6px;
+	}
+	/*Botoes da tabela Excluir/Alterar*/
 	table button{
-		background-color: tan;
+		border-radius: 10px;
+		background-color: darkslategray;
+		color: lightblue;
+		padding: 3px 15px;/*definindo tamanhos*/
 	}
 /*classes utilizada no javascript*/
 .estadoAlteracao{
-	background-color: coral;
+	background-color: orange;
 }
 
-.estadoInclusao{
-	background-color: green;
-}
